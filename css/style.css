@@ -1,0 +1,31 @@
+/*General stuff*/
+.page{height:100vh; position:relative;}
+#top-bar{position:fixed; width:100%}
+#home{cursor:pointer;}
+
+/*Landing Page*/
+#bottom-bar{
+    position:relative;
+    top:85vh;
+    left:0;
+    width:90vw;}
+#bottom-bar #left{left:0;display:inline-block;}
+#bottom-bar #center{
+    left:36vw;
+    display:inline-block;
+    font-size:3em;
+}
+#bottom-bar #right{
+    position:relative;
+    left:70vw;
+    display:inline-block;
+}
+#bottom-bar .glyphicon-menu-down:hover{color:darkgray;cursor:pointer;}
+
+/*Portfolio*/
+#gallery{
+    position:absolute;
+    height:70vh;
+    width:83vw;
+    bottom:20px;
+}
