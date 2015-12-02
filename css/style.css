@@ -5,19 +5,19 @@
 
 /*Landing Page*/
 #bottom-bar{
-    position:relative;
+    position: fixed;
     top:85vh;
     left:0;
     width:90vw;}
-#bottom-bar #left{left:0;display:inline-block;}
+#bottom-bar #left{left:10vw;display:inline-block;}
 #bottom-bar #center{
-    left:36vw;
+    left:40vw;
     display:inline-block;
     font-size:3em;
 }
 #bottom-bar #right{
     position:relative;
-    left:70vw;
+    left:75vw;
     display:inline-block;
 }
 #bottom-bar .glyphicon-menu-down:hover{color:darkgray;cursor:pointer;}
@@ -28,4 +28,15 @@
     height:70vh;
     width:83vw;
     bottom:20px;
+}
+/*Gallery Nav*/
+#gallery-nav ul{
+    font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight:bolder;
+    color:grey;
+    list-style:none;
+    margin-top:2%;
+}
+#gallery-nav .active{
+    color:black !important;
 }

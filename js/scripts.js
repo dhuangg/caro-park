@@ -20,3 +20,8 @@ function buildScroll(tag){
         scrollTo(tag + 'h');
     });
 }
+
+var app=angular.module("portfolio", []);
+app.controller('GalleryNavigation',function(){
+
+});
