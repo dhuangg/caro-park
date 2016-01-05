@@ -7,11 +7,11 @@
 #bottom-bar{
     position: fixed;
     top:85vh;
-    left:0;
+    left:5vw;
     width:90vw;}
 #bottom-bar #left{left:10vw;display:inline-block;}
 #bottom-bar #center{
-    left:40vw;
+    left:38vw;
     display:inline-block;
     font-size:3em;
 }
@@ -25,18 +25,48 @@
 /*Portfolio*/
 #gallery{
     position:absolute;
-    height:70vh;
+    height:80vh;
     width:83vw;
     bottom:20px;
 }
-/*Gallery Nav*/
-#gallery-nav ul{
+/*Navigation CSS*/
+#gallery-nav ul, #about-nav ul{
     font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight:bolder;
     color:grey;
     list-style:none;
     margin-top:2%;
+    display:inline-block;
+    top:10px;
+    left:6vw;
 }
-#gallery-nav .active{
+#gallery-nav .active, #about-nav .active{
     color:black !important;
 }
+#gallery-nav a, #about-nav a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/*Gallery Widgets*/
+#right-indicators.carousel-indicators{  top:-10vh !important; left:109vw !important; width:0; }
+#right-indicators li{ display:block; }
+.carousel-indicators .active{background-color:black;}
+.carousel-indicators li{border-color:black; }
+.image{display:block; margin:auto;}
+
+/*About*/
+.about-content{
+    margin-top:5%;
+    color:black;
+    font-weight:bold;
+    line-height:175%;
+    font-size:1.5em;
+}
+.about-resume{
+    margin-top:5%;
+    color:black;
+    font-weight:bolder;
+    line-height:150%;
+}
+.about-resume .title{margin:5% 10% 5% 10%;}

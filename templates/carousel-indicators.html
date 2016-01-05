@@ -1,0 +1,5 @@
+
+<li ng-repeat="slides in nav.slides | filter:nav.currLibrary">
+        <span ng-show="nav.isActive()">{{slides.title}}</span>
+</li>
+
