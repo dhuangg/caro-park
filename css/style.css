@@ -49,6 +49,13 @@
 }
 
 /*Gallery Widgets*/
+.indicators{
+    /*Top right indicator text*/
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    margin-top: -6px;
+}
 #right-indicators.carousel-indicators{  top:-10vh !important; left:109vw !important; width:0; }
 #right-indicators li{ display:block; }
 .carousel-indicators .active{background-color:black;}

@@ -1,5 +1,6 @@
 
-<li ng-repeat="slides in nav.slides | filter:nav.currLibrary">
-        <span ng-show="nav.isActive()">{{slides.title}}</span>
+<li ng-repeat="slides in nav.slides | filter:nav.currLibrary" class="indicator-wrapper"
+    data-target="#carousel-example-generic" data-slide-to="{{slides.num}}">
+        <span ng-show="nav.isActive({{slides.num}})" class="indicators">{{slides.title}}</span>
 </li>
 

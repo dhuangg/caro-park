@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>caro park</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
 
@@ -19,14 +19,12 @@
     <script src="js/app.js" type="text/javascript"></script>
 </head>
 <body ng-app="portfolio">
-
     <!--Landing Page-->
     <div class="container page" id="top">
         <div id="top-bar" class="row">
             <div  id="home">
                 <h1 class="col-md-1">caro <br>park</h1>
             </div>
-
         </div>
         <div id="bottom-bar" class="container">
             <h2 id="left"><a href="#gallery-anchor" style="text-decoration:none; color:black;">work</a></h2>
@@ -65,18 +63,14 @@
         <div id="gallery" class="carousel slide" data-ride="carousel">
             <!-- Top Right Indicators -->
             <carousel-indicators class="carousel-indicators" id="right-indicators"></carousel-indicators>
-
-            <!-- Indicators -->
+            <!-- Bottom Indicators -->
             <carousel-indicators class="carousel-indicators"></carousel-indicators>
 
             <!-- Wrapper for slides -->
             <div class="gallery-wrapper">
-                <!--Print Work loaded when clicked; refer to app.js for print directive-->
-                <work></work>
-
+                <!--Selected works will loaded when clicked; refer to app.js for works directive-->
+                <works></works>
             </div>
-
-
             <!-- Controls -->
             <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
                 <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -144,7 +138,7 @@
                     <br>email: carolinespark@ucla.edu
                 </p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" ng-show="nav.isSelected(1)">
                 <img src="images/prof.jpg" style="height: 80vh; width:auto; float:right;"/>
             </div>
 

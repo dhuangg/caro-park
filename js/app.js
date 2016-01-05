@@ -3,11 +3,26 @@
  */
 
 jQuery(document).ready(function(){
+    $('.carousel').carousel();
+    $('.left').on('click',function(){
+        $('.carousel').carousel('prev');
+    });
+    $('.right').on('click', function(){
+        $('.carousel').carousel('next');
+    });
+    $('.carousel-indicators').on('click',function(event){
+        alert('hi');
+        var num=event.target.id;
+        $('.carousel').carousel(num);
+    });
     setTimeout(function(){
         $('.carousel-inner .item:first-child').addClass('active');
     },500);
 });
-
+currentIndex = $('div.active').index() + 1;
+$('.carousel').bind('slid', function() {
+    currentIndex = $('div.active').index() + 1;
+});
 
 var app=angular.module("portfolio", ['ngRoute']);
 
@@ -39,9 +54,11 @@ app.controller('GalleryNavigation',function(){
     this.isSelected=function(checkSec){
         return this.section==checkSec;
     };
-    this.isActive=function(){
-        console.log('crap');
-        return $('span').parent('li').hasClass('.active');
+    this.isActive=function(num){
+        console.log("Current Index: " + currentIndex);
+        console.log("Slide Index: "+(num+1));
+        console.log(currentIndex==(num+1));
+        return currentIndex==(num+1);
     }
 });
 
@@ -64,10 +81,10 @@ app.directive("carouselIndicators",function(){
     };
 });
 
-app.directive("work",function(){
+app.directive("works",function(){
     return{
         restrict:'E',
-        templateUrl:'templates/work.html'
+        templateUrl:'templates/works.html'
     };
 });
 
@@ -98,43 +115,3 @@ var Library=[
     }
 ];
 
-var webLibrary=[
-    {
-        title:'death_grips.gif',
-        image:'death_grips.gif',
-        num:'1'
-    },
-    {
-        title:'Contempo Flux',
-        image:'contempo_flux.gif',
-        num:'1'
-    }
-];
-var videoLibrary=[
-    {
-        title:'Bruin Bash',
-        image:'bbash.gif',
-        num:'0'
-    }
-];
-var exhibitionLibrary=[
-    {
-        title:'Bruin Bash',
-        image:'bbash.gif',
-        num:'0'
-    }
-];
-var photographyLibrary=[
-    {
-        title:'Bruin Bash',
-        image:'bbash.gif',
-        num:'0'
-    }
-];
-var illustrationLibrary=[
-    {
-        title:'Bruin Bash',
-        image:'bbash.gif',
-        num:'0'
-    }
-];
