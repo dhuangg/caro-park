@@ -32,6 +32,7 @@ app.controller('GalleryNavigation',function(){
         if(setSec==0){
             setTimeout(function(){
                 $('.carousel-inner .item:first-child').addClass('active');
+                $('.carousel-indicators .indicator-wrapper:first-child').addClass('active');
             },500);
             $('.carousel').carousel(200);
             $('.carousel-inner').fadeOut('slow');
@@ -41,6 +42,7 @@ app.controller('GalleryNavigation',function(){
         if(setSec==1){
             setTimeout(function(){
                 $('.carousel-inner .item:first-child').addClass('active');
+                $('.carousel-indicators .indicator-wrapper:first-child').addClass('active');
             },500);
             $('.carousel').carousel(200);
             $('.carousel-inner').fadeOut('fast');
@@ -50,6 +52,7 @@ app.controller('GalleryNavigation',function(){
         if(setSec==2){
             setTimeout(function(){
                 $('.carousel-inner .item:first-child').addClass('active');
+                $('.carousel-indicators .indicator-wrapper:first-child').addClass('active');
             },500);
             $('.carousel').carousel(200);
             $('.carousel-inner').fadeOut('slow');
