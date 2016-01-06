@@ -55,7 +55,11 @@
     text-align: right;
     right: 20px;
     margin-top: -6px;
+    font-weight:bolder;
 }
+.indicator-wrapper .indicators{opacity:0;}
+.indicator-wrapper.active .indicators{opacity:1;}
+
 #right-indicators.carousel-indicators{  top:-10vh !important; left:109vw !important; width:0; }
 #right-indicators li{ display:block; }
 .carousel-indicators .active{background-color:black;}
