@@ -106,7 +106,7 @@ var Library=[
         library:'print'
     },
     {
-        title:'death_grips.gif',
+        title:'Death Grips',
         image:'death_grips.gif',
         num:'0',
         library:'web'
