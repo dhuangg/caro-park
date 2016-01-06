@@ -17,7 +17,8 @@ jQuery(document).ready(function(){
     });
     setTimeout(function(){
         $('.carousel-inner .item:first-child').addClass('active');
-    },500);
+        $('.carousel-indicators .indicator-wrapper:first-child').addClass('active');
+    },400);
 });
 
 var app=angular.module("portfolio", []);
